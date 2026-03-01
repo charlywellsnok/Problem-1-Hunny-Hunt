@@ -1,4 +1,4 @@
-# Problem-1-Hunny-Hunt
+# Problem-1-Hunny-Hunt - Data Structures and Algorithms
 Data Structures and Algorithms
 
 #Question
