@@ -13,7 +13,7 @@ Edge cases to consider
 1. Empty list
 2. Target not in list
 3. One target in the list
-4. Duplicates of the target in the last
+4. Duplicates of the target in the list
 5. Target at the end of the list
 
 Approach chosen:
