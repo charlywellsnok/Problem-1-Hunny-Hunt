@@ -47,9 +47,44 @@ Time complexity in the best case scenario is O(1) where we find the target at th
 
 Tradeoff of Linear search to other possible options like binary search is simplicity over performance. 
 
-NB: Ideally  Linear Search is best for shorter list, were the list get longer options like binary search can be considered. 
+NB: Ideally  Linear Search is best for shorter list, were the list get longer options like binary search can be 
+considered. 
 
 Space Complexity:
 The space complexity is O(1) because no extra memory and data structure is needed.
 
 
+
+
+
+Or we could use the two pointer approach. That is way easier.
+
+def linear_search(items, target):
+    #return first index of target in tems and -1 if target is not found
+    
+    
+    left_pointer = 0
+    right_pointer = len(items) - 1 
+     
+    while left_pointer <= right_pointer:
+        if items[left_pointer] == target:
+            return left_pointer
+            
+        if items[right_pointer] == target:
+            return right_pointer
+            
+        left_pointer += 1 
+        right_pointer -= 1 
+        
+    return -1 
+    
+        
+        
+items = ['haycorn', 'haycorn', 'haycorn', 'hunny', 'haycorn']
+target = 'hunny'
+print(linear_search(items, target))
+
+items = ['bed', 'blue jacket', 'red shirt', 'hunny']
+target = 'red balloon'
+print(linear_search(items, target))
+    
